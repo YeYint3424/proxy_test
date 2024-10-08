@@ -7,8 +7,8 @@ export default function Home() {
 
   useEffect(() => {
     setIsLoading(true);
-    
-    fetch("/api/catfacts")
+
+    fetch("/api/proxy")
       .then((response) => response.json())
       .then((data) => {
         setCatFact(data);
@@ -23,7 +23,11 @@ export default function Home() {
   return (
     <div>
       <h1>Random Cat Fact</h1>
-      {isLoading ? <p>Loading...</p> : <p>{catFact?.fact || "No cat fact available"}</p>}
+      {isLoading ? (
+        <p>Loading...</p>
+      ) : (
+        <p>{catFact?.fact || "No cat fact available"}</p>
+      )}
     </div>
   );
 }
