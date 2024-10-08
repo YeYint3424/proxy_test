@@ -1,9 +1,8 @@
-// app/api/catfacts/route.js
 import { NextResponse } from 'next/server';
 import { HttpsProxyAgent } from 'https-proxy-agent';
 
 export async function GET() {
-    const proxyUrl = 'http://45.77.209.195:8080';  // Replace with an actual working proxy URL
+    const proxyUrl = 'http://45.77.209.195:8080'; 
     const agent = new HttpsProxyAgent(proxyUrl);
 
     try {
