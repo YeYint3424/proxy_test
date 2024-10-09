@@ -96,7 +96,7 @@ export default function Home() {
         type="text"
         placeholder="title"
         onChange={(e) => setNewTitle(e.target.value)}
-        className="border mb-3 border-gray-300  bg-slate-950 rounded-lg p-2 w-full mb-4 focus:outline-none focus:ring-2 focus:ring-lime-400"
+        className="border border-gray-300  bg-slate-950 rounded-lg p-2 w-full mb-4 focus:outline-none focus:ring-2 focus:ring-lime-400"
       />
       <div
         className="px-3 mb-3 py-2 rounded-lg bg-lime-400 text-black w-fit cursor-pointer"
